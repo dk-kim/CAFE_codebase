@@ -60,17 +60,17 @@ This work introduces the new benchmark Café dataset and the new model Group Tra
 
 # File structure
 
-    ├── Dataset/ <br/>
-    │     └── cafe/ <br/>
-    │           └── gt_tracks_24.pkl <br/>
-    ├── dataloader/ <br/>
-    ├── evaluation/ <br/>
-    │     └── gt_tracks_24.txt <br/>
-    ├── label_map/ <br/>
-    ├── models/ <br/>
-    ├── scripts/ <br/>
-    └── util/ <br/>
-    train.py <br/>
-    test.py <br/>
-    environment.yml <br/> 
-    README.md <br/> 
+    ├── Dataset/
+    │     └── cafe/
+    │           └── gt_tracks_24.pkl
+    ├── dataloader/
+    ├── evaluation/
+    │     └── gt_tracks_24.txt
+    ├── label_map/
+    ├── models/
+    ├── scripts/
+    └── util/
+    train.py
+    test.py
+    environment.yml
+    README.md
