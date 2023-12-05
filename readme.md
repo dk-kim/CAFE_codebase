@@ -1,68 +1,76 @@
-# Requirements
+# Towards More Practical Group Activity Detection:<br> A New Benchmark and Model
+
+### [Dongkeun Kim](https://dk-kim.github.io/), [Youngkil Song](https://www.linkedin.com/in/youngkil-song-8936792a3/), [Minsu Cho](https://cvlab.postech.ac.kr/~mcho/), [Suha Kwak](https://suhakwak.github.io/)
+
+### [Project Page](http://cvlab.postech.ac.kr/research/CAFE/) | [Paper](https://arxiv.org/abs/)
+
+## Overview
+This work introduces the new benchmark Café dataset and the new model Group Transformer. 
+
+## Requirements
 
 - Ubuntu 20.04
 - Python 3.8.5
 - CUDA 11.0
 - PyTorch 1.7.1
 
-# Conda environment installation
+## Conda environment installation
     conda env create --file environment.yml
 
     conda activate gad
 
     pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 -f https://download.pytorch.org/whl/torch_stable.html
     
-# Install additional package
+## Install additional package
     sh scripts/setup.sh
    
 
-# Download datasets (Subset of Cafe dataset only)
+## Download datasets (Subset of Cafe dataset only)
 
     sh scripts/download_datasets.sh
 
-# Download trained weights
+## Download trained weights
 
     sh scripts/download_checkpoints.sh
 
-# Run test scripts
+## Run test scripts
 
 - Cafe dataset (split by view)
   
-
-    sh scripts/test_cafe_view.sh
+        sh scripts/test_cafe_view.sh
 
 - Cafe dataset (split by place)
   
 
-    sh scripts/test_cafe_place.sh
+        sh scripts/test_cafe_place.sh
 
-# Run train scripts
+## Run train scripts
 
 - Cafe dataset (split by view)
 
 
-    sh scripts/train_cafe_view.sh
+        sh scripts/train_cafe_view.sh
 
 - Cafe dataset (split by place)
 
 
-    sh scripts/train_cafe_place.sh
+        sh scripts/train_cafe_place.sh
 
 
 
 # File structure
 
-── Dataset/ <br/>
-│   │── cafe/ <br/>
-│   │   └── gt_tracks_24.pkl <br/>
-│── dataloader/ <br/>
-│── evaluation/ <br/>
-│   └── gt_tracks_24.txt <br/>
-│── label_map/ <br/>
-│── models/ <br/>
-│── scripts/ <br/>
-│── util/ <br/>
-train.py <br/>
-test.py <br/>
-environment.yml <br/> 
-README.md <br/> 
+    ├── Dataset/ <br/>
+    │     └── cafe/ <br/>
+    │           └── gt_tracks_24.pkl <br/>
+    ├── dataloader/ <br/>
+    ├── evaluation/ <br/>
+    │     └── gt_tracks_24.txt <br/>
+    ├── label_map/ <br/>
+    ├── models/ <br/>
+    ├── scripts/ <br/>
+    └── util/ <br/>
+    train.py <br/>
+    test.py <br/>
+    environment.yml <br/> 
+    README.md <br/> 
