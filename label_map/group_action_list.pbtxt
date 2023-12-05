@@ -1,0 +1,24 @@
+item {
+  name: "Queueing"
+  id: 1
+}
+item {
+  name: "Ordering"
+  id: 2
+}
+item {
+  name: "Eating/Drinking"
+  id: 3
+}
+item {
+  name: "Working/Studying"
+  id: 4
+}
+item {
+  name: "Fighting"
+  id: 5
+}
+item {
+  name: "TakingSelfie"
+  id: 6
+}

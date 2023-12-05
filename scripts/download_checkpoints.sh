@@ -1,0 +1,3 @@
+wget --load-cookies ~/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies ~/cookies.txt --keep-session-cookies --no-check-certificate 'https://drive.google.com/file/d/1M0vmruhcU_SpYQL0SPqUcg-wKlfyOyWa/view?usp=drive_link' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1M0vmruhcU_SpYQL0SPqUcg-wKlfyOyWa" -O cafe_checkpoints.zip && rm -rf ~/cookies.txt
+unzip cafe_checkpoints.zip
+rm cafe_checkpoints.zip

@@ -1,0 +1,1 @@
+python test.py --data_path Dataset/ --split 'place' --model_path cafe_place.pth
