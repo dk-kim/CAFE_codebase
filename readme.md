@@ -2,7 +2,7 @@
 
 ### [Dongkeun Kim](https://dk-kim.github.io/), [Youngkil Song](https://www.linkedin.com/in/youngkil-song-8936792a3/), [Minsu Cho](https://cvlab.postech.ac.kr/~mcho/), [Suha Kwak](https://suhakwak.github.io/)
 
-### [Project Page](http://cvlab.postech.ac.kr/research/CAFE/) | [Paper](https://arxiv.org/abs/)
+### [Project Page](http://dk-kim.github.io/CAFE) | [Paper](https://arxiv.org/abs/2312.02878)
 
 ## Overview
 This work introduces the new benchmark Café dataset and the new model Group Transformer. 
