@@ -5,7 +5,7 @@
 ### [Project Page](http://dk-kim.github.io/CAFE) | [Paper](https://arxiv.org/abs/2312.02878)
 
 ## Overview
-This work introduces the new benchmark Café dataset and the new model Group Transformer. 
+This work introduces the new benchmark Café dataset and the new model Grouping Transformer. 
 
 ## Requirements
 
