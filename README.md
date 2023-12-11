@@ -4,7 +4,7 @@ This is the repository that contains project page source files for [CAFE Project
 
 
 
-## Citing
+## Citation
 If you find our work useful, please consider citing our paper:
 ```BibTeX
 @article{kim2023towards,
