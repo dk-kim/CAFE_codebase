@@ -24,7 +24,6 @@ This work introduces the new benchmark Café dataset and the new model Grouping 
 ## Install additional package
     sh scripts/setup.sh
    
-
 ## Download datasets (Subset of Cafe dataset only)
 
     sh scripts/download_datasets.sh
@@ -57,8 +56,7 @@ This work introduces the new benchmark Café dataset and the new model Grouping 
         sh scripts/train_cafe_place.sh
 
 
-
-# File structure
+## File structure
 
     ├── Dataset/
     │     └── cafe/
@@ -74,3 +72,14 @@ This work introduces the new benchmark Café dataset and the new model Grouping 
     test.py
     environment.yml
     README.md
+
+## Citation
+If you find our work useful, please consider citing our paper:
+```BibTeX
+@article{kim2023towards,
+  title={Towards More Practical Group Activity Detection: A New Benchmark and Model},
+  author={Kim, Dongkeun and Song, Youngkil and Cho, Minsu and Kwak, Suha},
+  journal={arXiv preprint arXiv:2312.02878},
+  year={2023}
+}
+```
