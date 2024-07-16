@@ -5,7 +5,7 @@
 ### [Project Page](http://dk-kim.github.io/CAFE) | [Paper](https://arxiv.org/abs/2312.02878)
 
 ## Overview
-This work introduces the new benchmark Café dataset and the new model Grouping Transformer. 
+This work introduces the new benchmark Café dataset and the new model for GAD. 
 
 ## Requirements
 
@@ -26,7 +26,7 @@ This work introduces the new benchmark Café dataset and the new model Grouping 
    
 ## Download datasets
 
-Download Caf\'e dataset from:   <br/> 
+Download Café dataset from:   <br/> 
 https://cvlab.postech.ac.kr/research/CAFE/
 
 ## Download trained weights
@@ -38,23 +38,23 @@ https://drive.google.com/file/d/1W_2gkzARCzSdK8Db4G4pkzN3GrJTYo8R/view?usp=drive
 
 ## Run test scripts
 
-- Cafe dataset (split by view)
+- Café dataset (split by view)
   
         sh scripts/test_cafe_view.sh
 
-- Cafe dataset (split by place)
+- Café dataset (split by place)
   
 
         sh scripts/test_cafe_place.sh
 
 ## Run train scripts
 
-- Cafe dataset (split by view)
+- Café dataset (split by view)
 
 
         sh scripts/train_cafe_view.sh
 
-- Cafe dataset (split by place)
+- Café dataset (split by place)
 
 
         sh scripts/train_cafe_place.sh
