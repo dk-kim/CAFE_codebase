@@ -74,32 +74,21 @@ parser.add_argument('--set_cost_membership', default=1, type=float,
 
 # Training parameters
 parser.add_argument('--random_seed', default=1, type=int, help='random seed for reproduction')
-parser.add_argument('--epochs', default=30, type=int, help='Max epochs')
-parser.add_argument('--test_freq', default=1, type=int, help='print frequency')
 parser.add_argument('--batch', default=16, type=int, help='Batch size')
 parser.add_argument('--test_batch', default=16, type=int, help='Test batch size')
-parser.add_argument('--lr', default=1e-5, type=float, help='Initial learning rate')
-parser.add_argument('--max_lr', default=1e-4, type=float, help='Max learning rate')
-parser.add_argument('--lr_step', default=4, type=int, help='step size for learning rate scheduler')
-parser.add_argument('--lr_step_down', default=25, type=int, help='step down size (cyclic) for learning rate scheduler')
-parser.add_argument('--weight_decay', default=1e-4, type=float, help='weight decay')
 parser.add_argument('--drop_rate', default=0.1, type=float, help='Dropout rate')
-parser.add_argument('--gradient_clipping', action='store_true', help='use gradient clipping')
-parser.add_argument('--max_norm', default=1.0, type=float, help='gradient clipping max norm')
-
 # GPU
 parser.add_argument('--device', default="0, 1", type=str, help='GPU device')
 parser.add_argument('--distributed', action='store_true')
 
 # Load model
-parser.add_argument('--load_model', action='store_true', help='load model')
 parser.add_argument('--model_path', default="", type=str, help='pretrained model path')
 
 # Visualization
 parser.add_argument('--result_path', default="./outputs/")
 
 # Evaluation
-parser.add_argument('--groundtruth', default='./evaluation/gt_tracks_24.txt', type=argparse.FileType("r"))
+parser.add_argument('--groundtruth', default='./evaluation/gt_tracks.txt', type=argparse.FileType("r"))
 parser.add_argument('--labelmap', default='./label_map/group_action_list.pbtxt', type=argparse.FileType("r"))
 parser.add_argument('--giou_thresh', default=1.0, type=float)
 parser.add_argument('--eval_type', default="gt_base", type=str, help='gt_based or detection_based')
@@ -119,7 +108,7 @@ def main():
     os.environ["CUDA_VISIBLE_DEVICES"] = args.device
 
     time_str = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
-    exp_name = '[%s]_GAD_<%s>' % (args.dataset, time_str)
+    exp_name = '[%s]_GAD_<%s>_%d' % (args.dataset, time_str, args.random_seed)
 
     path = args.result_path + exp_name
     if not os.path.exists(path):
