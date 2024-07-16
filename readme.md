@@ -65,10 +65,10 @@ https://drive.google.com/file/d/1W_2gkzARCzSdK8Db4G4pkzN3GrJTYo8R/view?usp=drive
 
     ├── Dataset/
     │     └── cafe/
-    │           └── gt_tracks_24.pkl
+    │           └── gt_tracks.pkl
     ├── dataloader/
     ├── evaluation/
-    │     └── gt_tracks_24.txt
+    │     └── gt_tracks.txt
     ├── label_map/
     ├── models/
     ├── scripts/
