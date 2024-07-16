@@ -24,13 +24,17 @@ This work introduces the new benchmark Café dataset and the new model Grouping 
 ## Install additional package
     sh scripts/setup.sh
    
-## Download datasets (Subset of Cafe dataset only)
+## Download datasets
 
-    sh scripts/download_datasets.sh
+Download Caf\'e dataset from:   <br/> 
+https://cvlab.postech.ac.kr/research/CAFE/
 
 ## Download trained weights
 
     sh scripts/download_checkpoints.sh
+
+or from:   <br/>  
+https://drive.google.com/file/d/1W_2gkzARCzSdK8Db4G4pkzN3GrJTYo8R/view?usp=drive_link
 
 ## Run test scripts
 
