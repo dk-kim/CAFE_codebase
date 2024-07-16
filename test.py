@@ -108,7 +108,7 @@ def main():
     os.environ["CUDA_VISIBLE_DEVICES"] = args.device
 
     time_str = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
-    exp_name = '[%s]_GAD_<%s>_%d' % (args.dataset, time_str, args.random_seed)
+    exp_name = '[%s]_GAD_<%s>' % (args.dataset, time_str)
 
     path = args.result_path + exp_name
     if not os.path.exists(path):
