@@ -5,7 +5,7 @@
 ### [Project Page](http://dk-kim.github.io/CAFE) | [Paper](https://arxiv.org/abs/2312.02878)
 
 ## Overview
-This work introduces the new benchmark Café dataset and the new model for GAD. 
+This work introduces the new benchmark dataset, Café, and a new model for group activity detection (GAD). 
 
 ## Requirements
 
@@ -88,3 +88,6 @@ If you find our work useful, please consider citing our paper:
   year={2023}
 }
 ```
+
+## Acknowledgement
+This work was supported by the NRF grant and the IITP grant funded by Ministry of Science and ICT, Korea (RS-2019-II191906, IITP-2020-0-00842, NRF-2021R1A2C3012728, RS-2022-II220264). 
