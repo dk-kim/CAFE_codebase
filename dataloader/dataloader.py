@@ -46,7 +46,7 @@ def read_dataset(args):
             test_frames = cafe_all_frames(test_data)
 
         # actor tracklets for all frames
-        all_tracks = pickle.load(open(data_path + '/gt_tracks_24.pkl', 'rb'))
+        all_tracks = pickle.load(open(data_path + '/gt_tracks.pkl', 'rb'))
 
         train_set = CafeDataset(train_frames, train_data, all_tracks, data_path, args, is_training=True)
         test_set = CafeDataset(test_frames, test_data, all_tracks, data_path, args, is_training=False)

@@ -19,8 +19,8 @@ def cafe_read_annotations(path, videos, num_class):
     for vid in videos:
         video_path = os.path.join(path, vid)
         for cid in os.listdir(video_path):
-            clip_path = os.path.join(video_path, cid)
-            label_path = clip_path + '/data.json'
+            clip_path = os.path.join(video_path, cid)            
+            label_path = clip_path + '/ann.json'
 
             with open(label_path, 'r') as file:
                 groups = {}
