@@ -1,5 +1,3 @@
-wget --load-cookies ~/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies ~/cookies.txt --keep-session-cookies --no-check-certificate 'https://drive.google.com/file/d/1FGPV5mwCfWg1j6fhW8FZdi6_qZ9PP43b/view?usp=drive_link' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1FGPV5mwCfWg1j6fhW8FZdi6_qZ9PP43b" -O Dataset.zip && rm -rf ~/cookies.txt
+wget https://cvlab.postech.ac.kr/research/CAFE/Cafe_Dataset.zip
 unzip Dataset.zip
 rm Dataset.zip
-wget --load-cookies ~/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies ~/cookies.txt --keep-session-cookies --no-check-certificate 'https://drive.google.com/file/d/1HPm2TQq-My0l0mnYNDxMmY09hLfBgtnS/view?usp=drive_link' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1HPm2TQq-My0l0mnYNDxMmY09hLfBgtnS" -O gt_tracks_24.txt && rm -rf ~/cookies.txt
-mv gt_tracks_24.txt ./evaluation/
