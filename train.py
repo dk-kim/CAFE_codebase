@@ -99,7 +99,7 @@ parser.add_argument('--model_path', default="", type=str, help='pretrained model
 parser.add_argument('--result_path', default="./outputs/")
 
 # Evaluation
-parser.add_argument('--groundtruth', default='./evaluation/gt_tracks_24.txt', type=argparse.FileType("r"))
+parser.add_argument('--groundtruth', default='./evaluation/gt_tracks.txt', type=argparse.FileType("r"))
 parser.add_argument('--labelmap', default='./label_map/group_action_list.pbtxt', type=argparse.FileType("r"))
 parser.add_argument('--giou_thresh', default=1.0, type=float)
 parser.add_argument('--eval_type', default="gt_base", type=str, help='gt_based or detection_based')
